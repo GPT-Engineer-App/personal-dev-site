@@ -4,7 +4,7 @@ import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 import Index from "./pages/Index.jsx";
 
 const Navbar = () => (
-  <Box as="nav" bg="gray.100" p={4}>
+  <Box as="nav" bg="gray.100" p={4} style={{ fontFamily: "'Courier New', Courier, monospace" }}>
     <Flex justify="space-between" maxW="container.xl" mx="auto">
       <Link href="#about" p={2}>About</Link>
       <Link href="#projects" p={2}>Projects</Link>
@@ -27,13 +27,13 @@ function App() {
 }
 
 const Footer = () => (
-  <Box as="footer" bg="gray.100" p={4} mt={10}>
+  <Box as="footer" bg="gray.100" p={4} mt={10} style={{ fontFamily: "'Courier New', Courier, monospace" }}>
     <Flex justify="space-between" maxW="container.xl" mx="auto">
       <Text>© 2023 John Doe. All rights reserved.</Text>
       <HStack spacing={4}>
-        <Link href="https://twitter.com" isExternal><IconButton aria-label="Twitter" icon={<FaTwitter />} /></Link>
-        <Link href="https://facebook.com" isExternal><IconButton aria-label="Facebook" icon={<FaFacebook />} /></Link>
-        <Link href="https://instagram.com" isExternal><IconButton aria-label="Instagram" icon={<FaInstagram />} /></Link>
+        <Link href="https://twitter.com" isExternal><IconButton aria-label="Twitter" icon={<FaTwitter />} style={{ filter: 'pixelate(3)' }} /></Link>
+        <Link href="https://facebook.com" isExternal><IconButton aria-label="Facebook" icon={<FaFacebook />} style={{ filter: 'pixelate(3)' }} /></Link>
+        <Link href="https://instagram.com" isExternal><IconButton aria-label="Instagram" icon={<FaInstagram />} style={{ filter: 'pixelate(3)' }} /></Link>
       </HStack>
       <Link href="#privacy-policy" p={2}>Privacy Policy</Link>
     </Flex>
