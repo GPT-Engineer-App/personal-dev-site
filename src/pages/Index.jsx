@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text, VStack, Link, IconButton } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, VStack, Link, IconButton, HStack } from '@chakra-ui/react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Index = () => {
