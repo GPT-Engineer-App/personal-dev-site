@@ -33,6 +33,17 @@ const Index = () => {
           </VStack>
         </Box>
       </VStack>
+      <Box as="footer" p={5} mt={10} bg="gray.100" color="gray.700">
+        <Flex direction="column" align="center" justify="center">
+          <Text>&copy; {new Date().getFullYear()} John Doe. All rights reserved.</Text>
+          <Link href="/privacy-policy" color="blue.500">Privacy Policy</Link>
+          <HStack spacing={4} mt={2}>
+            <Link href="https://github.com" isExternal><IconButton aria-label="GitHub" icon={<FaGithub />} /></Link>
+            <Link href="https://linkedin.com" isExternal><IconButton aria-label="LinkedIn" icon={<FaLinkedin />} /></Link>
+            <Link href="mailto:john.doe@example.com"><IconButton aria-label="Email" icon={<FaEnvelope />} /></Link>
+          </HStack>
+        </Flex>
+      </Box>
     </Box>
   );
 };
